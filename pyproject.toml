@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strata-sprint"
+version = "0.1.0"
+description = "A measured PRO 6000 serving profile and standalone runtime for Strata"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "LongWeihan"}]
+dependencies = []
+
+[project.optional-dependencies]
+bench = ["requests>=2.32,<3", "psutil>=6,<8", "numpy>=2,<3"]
+docs = ["matplotlib>=3.8,<4"]
+
+[project.scripts]
+strata-sprint = "strata_sprint.cli:main"
+
+[project.urls]
+Homepage = "https://longweihan.github.io/strata-sprint/"
+Repository = "https://github.com/LongWeihan/strata-sprint"
+Issues = "https://github.com/LongWeihan/strata-sprint/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

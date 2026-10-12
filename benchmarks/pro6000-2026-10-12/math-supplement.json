@@ -1,0 +1,59 @@
+{
+  "max_tokens": 1536,
+  "cases": [
+    {
+      "repeat": 0,
+      "finish": "stop",
+      "seconds": 2.6656,
+      "usage": {
+        "prompt_tokens": 44,
+        "completion_tokens": 592,
+        "total_tokens": 636,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "answer_sha256": "9a39dce64338b0499bcd10d1a982f97fc9317619a00b17c51d190c2327ee3b7a",
+      "original_512_token_prefix_preserved": true,
+      "contains_correct_answer": true,
+      "passed": true
+    },
+    {
+      "repeat": 1,
+      "finish": "stop",
+      "seconds": 2.7702,
+      "usage": {
+        "prompt_tokens": 44,
+        "completion_tokens": 621,
+        "total_tokens": 665,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "answer_sha256": "5537ed2ec4e790ebd5aab968833fb671fb4668b05ada14a1fa5a06f13d9979aa",
+      "original_512_token_prefix_preserved": true,
+      "contains_correct_answer": true,
+      "passed": true
+    },
+    {
+      "repeat": 2,
+      "finish": "stop",
+      "seconds": 3.0526,
+      "usage": {
+        "prompt_tokens": 44,
+        "completion_tokens": 687,
+        "total_tokens": 731,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "answer_sha256": "605368262554bbae5620a9830ace60dcefe6bbe376681db0ac4b38daab57fd44",
+      "original_512_token_prefix_preserved": true,
+      "contains_correct_answer": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "note": "Supplement only. The original 512-token truncation failures remain recorded.",
+  "finished_at": 1791792604.463787
+}

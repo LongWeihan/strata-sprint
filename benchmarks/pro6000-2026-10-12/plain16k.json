@@ -1,0 +1,79 @@
+{
+  "started_at": 1791791466.7726815,
+  "variants": [],
+  "phase": "complete",
+  "updated_at": 1791791518.3787997,
+  "checks": [
+    {
+      "equal": true,
+      "finite_masks_equal": true,
+      "top1_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "kl_nats": 0.0,
+      "baseline_sha256": "1a165d4cc17d78e60e1413b934c0bdc1df4633f1012d328c3c14b5ed1a231406",
+      "candidate_sha256": "1a165d4cc17d78e60e1413b934c0bdc1df4633f1012d328c3c14b5ed1a231406",
+      "tier": 4096,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 4094,
+        "prompt_ms": 1247.8,
+        "prompt_per_token_ms": 0.305,
+        "prompt_per_second": 3281.0,
+        "predicted_n": 13,
+        "predicted_ms": 70.8,
+        "predicted_per_token_ms": 5.446,
+        "predicted_per_second": 183.6,
+        "draft_n": 11,
+        "draft_n_accepted": 8
+      }
+    },
+    {
+      "equal": false,
+      "finite_masks_equal": true,
+      "top1_equal": true,
+      "max_abs_logit_difference": 2.0248472690582275,
+      "kl_nats": 0.0014103017146182486,
+      "baseline_sha256": "c619de344b958c0d1b0b9028868137918b25765feb421c0311c16f104516cbbb",
+      "candidate_sha256": "967c1f8efe0c3c3a1d2f0d5bab819edb27a8f5f4b857da6cb73f60f485b470a2",
+      "tier": 32768,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 32766,
+        "prompt_ms": 5887.9,
+        "prompt_per_token_ms": 0.18,
+        "prompt_per_second": 5565.0,
+        "predicted_n": 13,
+        "predicted_ms": 74.8,
+        "predicted_per_token_ms": 5.754,
+        "predicted_per_second": 173.8,
+        "draft_n": 12,
+        "draft_n_accepted": 8
+      }
+    },
+    {
+      "equal": false,
+      "finite_masks_equal": true,
+      "top1_equal": true,
+      "max_abs_logit_difference": 0.7754080295562744,
+      "kl_nats": 0.0003113886583939236,
+      "baseline_sha256": "681e01e6ae28f7e69d54c72b6c781c2ffd62424048653d1fad66a0affc183d12",
+      "candidate_sha256": "30594944aafedb54b5cdc17fe1d53620dc2cf8289e25ea6cdf54fa18d71b5c5c",
+      "tier": 122880,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 122884,
+        "prompt_ms": 22614.2,
+        "prompt_per_token_ms": 0.184,
+        "prompt_per_second": 5433.9,
+        "predicted_n": 13,
+        "predicted_ms": 74.3,
+        "predicted_per_token_ms": 5.715,
+        "predicted_per_second": 175.0,
+        "draft_n": 11,
+        "draft_n_accepted": 8
+      }
+    }
+  ],
+  "passed": false,
+  "completed_at": 1791791518.3787975
+}

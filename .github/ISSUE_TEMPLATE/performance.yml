@@ -1,0 +1,21 @@
+name: Performance result
+description: Share a same-hardware comparison, including regressions.
+body:
+  - type: textarea
+    attributes:
+      label: Hardware and model
+      description: GPU/VRAM, CPU/RAM, OS/driver/CUDA, model revision, quantization and context.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Exact baseline and candidate
+      description: Commits, arguments, environment changes and workload. Distinguish TTFT from decode throughput.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Data and precision controls
+      description: Repeated raw records, any slower cases, memory costs and correctness/numerical comparisons.
+    validations:
+      required: true

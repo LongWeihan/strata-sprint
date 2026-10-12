@@ -1,0 +1,19 @@
+name: Runtime problem
+description: Report an installation or serving failure with redacted metadata.
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Expected behavior, actual behavior and steps to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: GPU, RAM, OS, driver, CUDA, Python, Sprint version, Strata commit and model revision.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Redacted evidence
+      description: Doctor output, status metadata and relevant errors. Remove keys, prompts and private paths.

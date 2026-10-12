@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-12",
+  "redactions": [
+    "Process IDs omitted",
+    "Scratch filesystem prefixes replaced by placeholders"
+  ],
+  "unchanged": [
+    "Timing values",
+    "Token counts",
+    "Precision metrics",
+    "Output hashes",
+    "Failures and regressions"
+  ],
+  "files": [
+    {
+      "file": "validation.json",
+      "original_sha256": "9914c447821e5944bb03893207f1f4935fc3f6b2d6f68ce71abe9f3f0cb20dd2",
+      "export_sha256": "52086e7b959f730d0044630dbe50feb0a185b254f5e8dd3cfaa55d7f6ab8e7ec"
+    },
+    {
+      "file": "validation-logits-summary.json",
+      "original_sha256": "ff35b9aca668c8788cf2261d3e8878debfbb3201220113512caa4b64b11612d1",
+      "export_sha256": "ec4f733fb1c25b2d53578123b2db6b6690e9bbbe4917490a6f7bf660394bd827"
+    },
+    {
+      "file": "long.json",
+      "original_sha256": "4e37fcafbd7dc8e1a4b850c8a127869617b512f6ab2fe7a6774f8fe87a39de21",
+      "export_sha256": "70ccc2b92185d4d7aab8ba5b683c133e2738b90af50d27b030306a5f3ef3dd1e"
+    },
+    {
+      "file": "screen.json",
+      "original_sha256": "947455d8048355b910fc544b7d8a03aef400f358cfe0681e78970681f46991f1",
+      "export_sha256": "e9dccb953574f85cb6786f9c5c305447c7293eed43acae2e424cfb3b62c4e279"
+    },
+    {
+      "file": "precision.json",
+      "original_sha256": "1c37ca4d6fc56ad79753ad1c89a2a63f973051ea4d681182dccc64ee25fd7163",
+      "export_sha256": "d7a25925265b5a94edbe0f9a725f251d1e95b1cdcf036de24d4e1501132698ad"
+    },
+    {
+      "file": "precision-logits-summary.json",
+      "original_sha256": "b2e606e67bcdfc8ac49dbc86fbc6c13ceebbab7c09b7b1789bc86979e707ca26",
+      "export_sha256": "5a228e2bd51979d34b79320292bfc997c8938d2b0fd0defcd4bbd83042cbc3cf"
+    },
+    {
+      "file": "cache-parity.json",
+      "original_sha256": "04c91be3024ec43d809523a1317f40ee8c9e1a62506818d9d2002bbdb6c82aac",
+      "export_sha256": "969579fc8a1a05a61657db69372d6ae60e0f359a6168fc14274765a6cd349f48"
+    },
+    {
+      "file": "plain16k.json",
+      "original_sha256": "1f2cda9f6e5a4c0ae315d0e649cb1a433bc9c8c638ffab07e738805a1e7f4837",
+      "export_sha256": "8262cdc8ddb45dabc71e3d5d3cad2a21321715f499e3d017fdf8294ede21e012"
+    },
+    {
+      "file": "math-supplement.json",
+      "original_sha256": "c1a3e8acdd14821483e6753c932ec22999a9356e3cf76c6d36b14ce431074f4d",
+      "export_sha256": "c1a3e8acdd14821483e6753c932ec22999a9356e3cf76c6d36b14ce431074f4d"
+    }
+  ]
+}

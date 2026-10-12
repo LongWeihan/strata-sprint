@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-12",
+  "hardware": {
+    "gpu": "RTX PRO 6000 Blackwell Server Edition",
+    "gpu_total_mib": 97887,
+    "vcpu": 20,
+    "ram_gib": 160
+  },
+  "engine": {
+    "name": "Strata",
+    "version": "0.1.43",
+    "commit": "7695859aa13afb248bdb4d36f9b2e95707db079d",
+    "source_changes": false
+  },
+  "preserved": {
+    "target": "Qwen3.8-Flash-Next-GSQ-RCO-abliterated",
+    "quantization": "IQ3_S",
+    "kv": "FP16",
+    "context_tokens": 131072,
+    "mtp": "Q2_0, 4 drafts",
+    "sampler_and_thinking_tiers_unchanged": true
+  },
+  "isolated_prefill_ttft_seconds": {
+    "4096": {
+      "baseline": 1.7113,
+      "optimized": 1.1801,
+      "time_reduction_percent": 31.040729270145505,
+      "speedup": 1.4501313448012882
+    },
+    "32768": {
+      "baseline": 7.35155,
+      "optimized": 6.4686,
+      "time_reduction_percent": 12.010392366235678,
+      "speedup": 1.1364978511579011
+    },
+    "122880": {
+      "baseline": 26.00025,
+      "optimized": 24.721600000000002,
+      "time_reduction_percent": 4.917837328487218,
+      "speedup": 1.0517219759238883
+    }
+  },
+  "full_profile_mixed_sequence_ttft_seconds": {
+    "4096": {
+      "baseline": 1.5263333333333333,
+      "optimized": 2.8652,
+      "time_reduction_percent": -87.71784232365147,
+      "speedup": 0.5327144120247568
+    },
+    "32768": {
+      "baseline": 7.3097666666666665,
+      "optimized": 6.544133333333333,
+      "time_reduction_percent": 10.474114540819823,
+      "speedup": 1.1169953749923596
+    },
+    "122880": {
+      "baseline": 25.77006666666667,
+      "optimized": 25.095433333333332,
+      "time_reduction_percent": 2.6178951807135475,
+      "speedup": 1.0268827130566918
+    }
+  },
+  "main_conversation_resume_ttft_seconds": {
+    "baseline": 7.624908333333333,
+    "optimized": 0.19903333333333334,
+    "time_reduction_percent": 97.38969539524518,
+    "speedup": 38.30970524200301
+  },
+  "decode_tokens_per_second": {
+    "code": {
+      "baseline": 234.4,
+      "optimized": 234.56666666666666
+    },
+    "reasoning": {
+      "baseline": 223.79999999999998,
+      "optimized": 223.26666666666665
+    },
+    "prose": {
+      "baseline": 163.96666666666667,
+      "optimized": 163.63333333333333
+    }
+  },
+  "peak_gpu_mib": {
+    "baseline": 58155.0,
+    "optimized": 61585.0
+  },
+  "precision": {
+    "rows": 61,
+    "byte_equal_rows": 49,
+    "top1_equal_rows": 61,
+    "max_kl_nats": 0.00066572654566634,
+    "mean_kl_nats": 7.005519396918217e-05,
+    "max_abs_logit_difference": 1.9733524322509766,
+    "answer_equal": 70,
+    "answer_total": 70
+  },
+  "precision_interpretation": "All 49 non-interleaved first-logit comparisons are byte equal. The 12 cold-recompute versus cached-path comparisons differ numerically but have identical output text in these cases. A separate uninterrupted-vs-parked test confirms byte-exact logits and text after cache restore; no extra precision reduction is enabled. This is finite validation, not a universal proof.",
+  "cache_vs_uninterrupted_reference": {
+    "passed": true,
+    "logits_checks": [
+      {
+        "equal": true,
+        "finite_masks_equal": true,
+        "top1_equal": true,
+        "max_abs_logit_difference": 0.0,
+        "kl_nats": 0.0,
+        "baseline_sha256": "67428f6ad77bea805f855af4fca1fad45553ed96b98bbe4986a2d03db46ef010",
+        "candidate_sha256": "67428f6ad77bea805f855af4fca1fad45553ed96b98bbe4986a2d03db46ef010"
+      }
+    ]
+  },
+  "original_math_limit": "3 original 512-token tests truncated before final answer in both baseline and selected; retained as non-passing capability checks.",
+  "measurement": {
+    "host": "Linux GPU notebook on Molab; HTTP client and engine on the same remote machine",
+    "runtime_dependencies": "None on the notebook provider or a desktop bridge",
+    "raw_data_records": 449,
+    "baseline": "Recorded Strata 0.1.43 configuration, not a claim about every upstream configuration",
+    "new_wrapper_status": "Standalone CLI and supervisor are a subsequent extraction; historical GPU timings measure the same engine flags, not this new supervisor."
+  }
+}

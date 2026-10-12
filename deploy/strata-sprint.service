@@ -1,0 +1,20 @@
+[Unit]
+Description=Strata Sprint PRO 6000 inference server
+After=network.target
+
+[Service]
+Type=simple
+User=inference
+WorkingDirectory=/srv/strata-sprint
+Environment=PYTHONUNBUFFERED=1
+Environment=OMP_NUM_THREADS=4
+ExecStart=/srv/python/bin/strata-sprint serve --config /srv/strata/sprint.json --engine /srv/strata/source --python /srv/strata/python/bin/python --state-dir /srv/strata/sprint-state
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=35
+KillMode=control-group
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
